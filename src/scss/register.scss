@@ -1,0 +1,75 @@
+.register{
+    background: url("../../public/images/background.png") no-repeat center / cover;
+    height: 150vh;
+    padding: 148px 0;
+
+    &__card{
+        background-color: #fff;
+        max-width: 524px;
+        border-radius: 16px;
+        margin: 0 auto;
+        padding: 80px 32px;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-error {
+        border: 1px solid #840808;
+    }
+    
+    .error-message {
+        color: #840808;
+        font-size: 14px;
+        margin-top: 4px;
+        display: block;
+    }
+
+    &__title{
+        font: 400 27px "Manrope", serif;
+        text-align: center;
+        margin-bottom: 66px;
+    }
+
+    &__button{
+        display: block;
+        margin: 10px auto; 
+        background-color: #fff;
+        border: none;
+        font: 700 16px "Manrope", serif;
+    }
+
+    &__link{
+        color: $text-color;
+
+        &-text{
+            text-align: center;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-button{
+            margin-block: 12px 32px;
+            background-color: $elem-color;
+            color: #fff;
+            border-radius: 20px;
+            padding-block: 12px;
+            border: none;
+            font: $text-xs;
+        }
+
+        &-input{
+            border-radius: 8px;
+            border: 1px solid #C2C2B8;
+            padding: 17px 20px;
+            font: $text-base;
+        }
+    }
+
+}

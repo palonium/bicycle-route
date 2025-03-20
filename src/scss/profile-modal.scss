@@ -1,0 +1,193 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+    &__password-section{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            max-width: 250px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #C2C2B8;
+        }
+    }
+
+    &__password-button{
+        margin-top: 20px;
+        padding: 12px 40px;
+        background-color: #fff;
+        border: 1px solid #264311;
+        border-radius: 12px;
+        font: 500 16px "Manrope", serif;
+        color: #264311;
+    }
+
+    &__content {
+        background: #fff;
+        padding: 32px 40px;
+        border-radius: 10px;
+        width: 950px;
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-height: 90vh;   
+        overflow-y: auto;
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    &__title {
+        font: 700 28px "Manrope", serif;
+        color: #191B1D;
+        margin-bottom: 60px;
+    }
+
+    &__tabs {
+        display: flex;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+
+        .modal__tab {
+            flex: 1;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            text-align: center;
+            color: #777;
+            font: 700 16px "Manrope", serif;
+
+            &.active {
+                border-bottom: 2px solid #2a4d2e;
+                color: black;
+            }
+        }
+    }
+
+    &__avatar-box {
+        width: 162px;
+        height: 162px;
+        margin-bottom: 20px;
+    }
+
+    &__avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        margin-bottom: 60px;
+        label {
+            font: 400 16px "Manrope", serif;
+            color: #808080;
+            margin-bottom: 10px;
+        }
+
+        span{
+            color: #191B1D;
+            font: 400 18px "Manrope", serif;
+        }
+    }
+
+    &__input-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+
+        input {
+            border: none;
+            background: none;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .modal__edit-icon {
+            font-size: 16px;
+            cursor: pointer;
+            color: #777;
+        }
+    }
+    &__edit-button{
+        background-color: #fff;
+        border: none;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__change-password {
+        display: block;
+        margin: 10px 0 20px;
+        background: none;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    &__profile{
+        display: flex;
+        flex-direction: column
+        ;
+    }
+
+    &__save-button {
+        background: #264311;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 12px;
+        align-self: flex-end;
+
+        &:hover {
+            background: #1e3a1f;
+        }
+    }
+
+    
+}
+
+
+.modal__favorites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.route-card__favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &.active img {
+        filter: brightness(0) saturate(100%) invert(40%) sepia(79%) saturate(800%) hue-rotate(200deg);
+    }
+}

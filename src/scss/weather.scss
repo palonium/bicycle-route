@@ -1,0 +1,89 @@
+.weather{
+    padding: 20px;
+    margin-bottom: 120px;
+    &__title{
+      font: 400 32px "Manrope", serif;
+      margin-bottom: 63px;
+    }
+    &__days {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 44px;
+      margin-bottom: 63px;
+    }
+  
+    &__day{
+      &-btn {
+        padding: 9px 17px;
+        background: #fff;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bold;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 10px;
+        font: 700 16px "Manrope", serif;
+        color: #656E5E;
+
+        &.active {
+          border: 1px solid #142800;
+        }
+      }
+
+      &-number{
+        font-size: 20px;
+      }
+    }
+
+  
+    &__card {
+      position: relative;
+      background: linear-gradient(90deg, #51AEC8, #FFE6DF);
+      padding: 50px 78px 74px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+  
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #1D0C2DA6;
+          z-index: 1;
+      }
+  
+      * {
+          position: relative;
+          z-index: 2;
+      }
+  }
+
+  &__temp{
+    font: 500 110px "Manrope", serif;
+  }
+  .weather__icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .weather__details {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  align-items: center;
+  max-width: 219px;
+
+    span{
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+
+    &__items{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &--transparent {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__logo-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 40px;
+    }
+
+    /* Каталог маршрутов */
+    &__nav-dropdown {
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+
+        &-label{
+            font: 600 16px "Manrope", serif;
+            display: flex;
+        }
+
+        &-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            color: black;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            list-style: none;
+            padding: 10px;
+            width: 265px;
+            font: 700 16px "Manrope", serif;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 8px 12px;
+                cursor: pointer;
+                transition: background 0.2s;
+
+                &:hover {
+                    background: #f0f0f0;
+                }
+            }
+        }
+    }
+
+    /* Авторизация */
+    &__auth {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__register-button {
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        padding: 10px 40px;
+        border-radius: 12px;
+        cursor: pointer;
+        font: 700 16px "Manrope", serif;
+    }
+
+    &__login-button {
+        background: #264311;
+        border: none;
+        color: #fff;
+        padding: 12px 40px;
+        border-radius: 12px;
+        font: 700 16px "Manrope", serif;
+        cursor: pointer;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__user-name {
+        color: #fff;
+        font: 700 16px "Manrope", serif;
+        cursor: pointer;
+    }
+
+    &__user-avatar {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    &__logout-button {
+        border: none;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background:none;
+
+    }
+}
+
+
+.header__nav-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}

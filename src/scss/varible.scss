@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+$input-color: #EFEFEC;
+$primary-color: #509d04;
+$text-color: #142800;
+$elem-color: #264311;
+
+$font-family-base: "Manrope", serif;
+
+$font-size-base: 16px; 
+$font-size-small: 13px; 
+$font-size-large: 20px; 
+
+$font-weight-normal: 400; 
+$font-weight-bold: 700; 
+
+$text-base: $font-weight-normal $font-size-base $font-family-base ;
+$text-heading: $font-family-base, $font-weight-bold;
+$text-xs: $font-weight-bold $font-size-small $font-family-base ;
